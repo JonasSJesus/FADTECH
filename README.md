@@ -12,11 +12,11 @@ O FadTech é dividido em módulos, cada um focado em temas específicos para amp
 
 **Projetos realizados:**
 - Tema livre com as seguintes equipes e projetos:
-1º - **Equipe Rastro da Cueca:** Cadastro de Academia.
-2º - **Equipe Pelos nas Costas:** Cardápio Online.
-3º - **Equipe Papel Higiênico Furado:** RPG com 5 finais diferentes.
-4º - **Equipe Lacraias Sujas:** Jogo do Milhão.
-5º - **Equipe Caixas D'Água:** Não houve entrega de projeto.
+1º **Equipe Rastro da Cueca:** Cadastro de Academia.
+2º **Equipe Pelos nas Costas:** Cardápio Online.
+3º **Equipe Papel Higiênico Furado:** RPG com 5 finais diferentes.
+4º **Equipe Lacraias Sujas:** Jogo do Milhão.
+5º **Equipe Caixas D'Água:** Não houve entrega de projeto.
 
 ### **Módulo 2: Introdução ao Desenvolvimento Web** *(em andamento)*
 - **Frontend:**
