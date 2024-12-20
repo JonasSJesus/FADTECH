@@ -27,7 +27,7 @@ O FadTech é dividido em módulos, cada um focado em temas específicos para amp
   - PHP: criação de aplicações dinâmicas.
   - MySQL: fundamentos de banco de dados relacionais e integração com o PHP.
 
-**Projetos planejados:**
+**Requisitos planejados para os proximos projetos:**
 - Criar um site interativo incorporando as 5 funcionalidades que serão ensinadas ao longo deste semestre:
   - *1.* Criação de páginas HTML estilizadas com CSS.
   - *2.* Implementação de interatividade utilizando JavaScript.
