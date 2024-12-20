@@ -44,6 +44,7 @@ O projeto FADTECH busca proporcionar aos participantes:
 - Integração com o mercado de trabalho
 
 ## Contato
-Para mais informações, entre em contato com a equipe organizadora do projeto no email.
+Para mais informações, entre em contato com a equipe organizadora do projeto <a href="https://mail.google.com/mail/u/1/?hl=en&tf=cm&fs=1&to=devrgomes@gmail.com" title="Gmail">
+  <img src="https://img.shields.io/badge/-Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white&link=LINK-DO-SEU-GMAIL" alt="Gmail"/></a>.
 
 **Juntos construímos um futuro mais tecnológico!**
