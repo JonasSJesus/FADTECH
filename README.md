@@ -1,9 +1,9 @@
-# FadTech - Projeto de Extensão Tecnológica
+# FADTECH - Projeto de Extensão Tecnológica
 
 Bem-vindo ao repositório do **FADTECH**, um projeto de extensão educacional desenvolvido para alunos do CIEE com o objetivo de promover o desenvolvimento tecnológico e preparar os participantes para carreiras na área de Tecnologia da Informação (TI). O projeto busca construir uma base sólida de conhecimentos em programação, banco de dados e outras disciplinas relacionadas a TI, através de módulos práticos e interativos. A partir dessa iniciativa, decidimos criar um site para centralizar informações, materiais de estudo e projetos, tornando o acesso ao conhecimento mais dinâmico e acessível para todos os participantes.
 
 ## Estrutura do Projeto
-O FadTech é dividido em módulos, cada um focado em temas específicos para ampliar gradualmente os conhecimentos dos alunos. Confira os módulos desenvolvidos:
+O FADTECH é dividido em módulos, cada um focado em temas específicos para ampliar gradualmente os conhecimentos dos alunos. Confira os módulos desenvolvidos:
 
 ### **Módulo 1: Introdução à Tecnologia e Lógica de Programação**
 - Introdução ao mundo da tecnologia.
