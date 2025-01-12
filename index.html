@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADTECH</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>FADTECH</h1>
+            <button id="loginBtn">Login</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Transforme seu futuro com programação</h1>
+            <p>Participe do maior programa de oportunidades em tecnologia do Rio Grande do sul</p>
+        </section>
+
+        <div class="modal" id="loginModal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Usuário</label>
+                        <input type="email" id="email" placeholder="Digite seu Usuário" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Digite sua senha" required>
+                        <select name="usuario" id="usuario">
+                            <option value="aluno">Aluno</option>
+                            <option value="cordenação">Coordenação</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Informações -->
+        <section class="program-info">
+            <h2>Observações Gerais</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Coding">
+                    <h3>Curriculo atualizado</h3>
+                    <p>Aprenda as melhores e mais atualizadas tecnologias</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Team">
+                    <h3>Instrutores aptos e acesiveis</h3>
+                    <p>Aprenda com o suporte necessário</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Collaboration">
+                    <h3>Experiências à mão</h3>
+                    <p>Construa projetos reais e desenvolva portfólio
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="student-projects">
+            <h2>Sucessos de nossos alunos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 1">
+                    <h3>Academia</h3>
+                    <p>Turma de 2024</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 2">
+                    <h3>RPG game</h3>
+                    <p>Turma de 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- cronograma -->
+        <section class="schedule">
+            <h2>Cronograma atual</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Primeira fase - Fundamentos</h3>
+                    <p>8 semanas - HTML, CSS, JavaScript</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Segunda fase - Conceitos</h3>
+                    <p>8 semanas - React, Node.js</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Terceira fase - projetos</h3>
+                    <p>4 semanas - Aplicações reais</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const loginBtn = document.getElementById('loginBtn');
+        const loginModal = document.getElementById('loginModal');
+        const closeModal = document.getElementById('closeModal');
+
+        loginBtn.addEventListener('click', () => {
+            loginModal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === loginModal) {
+                loginModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

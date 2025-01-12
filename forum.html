@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADTECH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="forum">
+        <div class="container">
+            <h1>Student Forum</h1>
+
+            <!-- Ask Question Form -->
+            <div class="card">
+                <h2>Ask a Question</h2>
+                <form id="questionForm" method="post" action="index.php?page=forum">
+                    <div class="form-group">
+                        <label for="questionTitle">Title</label>
+                        <input class = "pergunta" type="text" id="questionTitle" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="questionContent">Question</label>
+                        <textarea id="questionContent" name="content" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Post Question</button>
+                </form>
+            </div>
+
+            <!-- Questions List -->
+            <div id="questionsList" class="questions-list">
+                <!-- Questions will be loaded here -->
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
