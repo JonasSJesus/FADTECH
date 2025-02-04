@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
     <title>FADTECH</title>
     <link rel="stylesheet" href="styles.css">
 
@@ -12,7 +12,14 @@
 <body>
     <header>
         <nav>
-            <h1>FADTECH</h1>
+            <h1 id="topo"><a href="">FADTECH</a></h1>
+
+            <ul>
+                <li class="projetot"><a href="#projetos">Projetos</a></li>
+                <li class="cronogramat"><a href="#cronograma">Cronograma</a></li>
+                <li class="contatot"><a href="#contato">Contato</a></li>
+                <li class="Saibat"><a href="#Saiba">Saiba mais</a></li>
+            </ul>
             <button id="loginBtn">Login</button>
         </nav>
     </header>
@@ -42,13 +49,14 @@
                         </select>
                     </div>
                     <button type="submit">Login</button>
+                    <h3><a href="dashboard.html">Dashboard</a></h3>
                 </form>
             </div>
         </div>
 
         <!-- Informações -->
-        <section class="program-info">
-            <h2>Observações Gerais</h2>
+        <section class="program-info" id="Saiba">
+            <h2 class = "Saiba">Observações Gerais</h2>
             <div class="grid">
                 <div class="card">
                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
@@ -74,27 +82,40 @@
         </section>
 
         <!-- Projetos -->
-        <section class="student-projects">
-            <h2>Sucessos de nossos alunos</h2>
+        <section class="student-projects" id="projetos">
+            <h2 class="Sucesso">Sucessos de nossos alunos</h2>
+            <h4 class="linguagem">Python</h4>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    <img src="https://www.fiberoficial.com.br/cdn/shop/articles/academia_musculacao.jpg?v=1687444110&width=2048"
                         alt="Project 1">
-                    <h3>Academia</h3>
+                    <h3>Sistema de treinos automáticos</h3>
                     <p>Turma de 2024</p>
                 </div>
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCkOcJNSDZu9f5ToYIW9seIzQ1McfPgU2dg&s"
                         alt="Project 2">
-                    <h3>RPG game</h3>
+                    <h3>Game em RPG</h3>
+                    <p>Turma de 2024</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://www.designi.com.br/images/preview/10679078.jpg"
+                        alt="Project 2">
+                    <h3>Cardápio de restaurante</h3>
+                    <p>Turma de 2024</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://scc10.com.br/wp-content/uploads/2024/09/f2586486-e695-4f11-9b4f-cb849ddfcf1a_11zon.jpg.webp"
+                        alt="Project 2">
+                    <h3>Jogo do milhão</h3>
                     <p>Turma de 2024</p>
                 </div>
             </div>
         </section>
 
         <!-- cronograma -->
-        <section class="schedule">
-            <h2>Cronograma atual</h2>
+        <section class="schedule" id="cronograma">
+            <h2 class="Cronograma">Cronograma atual</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <h3>Primeira fase - Fundamentos</h3>
@@ -111,7 +132,26 @@
             </div>
         </section>
     </main>
-    </div>
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <p>Email: contato@fadtech.com</p>
+            <p>Telefone: (51) 1234-5678</p>
+          </div>
+          <div class="footer-section">
+            <h3>Endereço</h3>
+            <p>Rua Exemplo, 123</p>
+            <p>Porto Alegre, RS</p>
+          </div>
+          <div class="footer-section">
+            <h3>Redes Sociais</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+      </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
     </script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -133,7 +173,45 @@
                 loginModal.style.display = 'none';
             }
         });
+
+        document.querySelector(".projetot a").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("projetos").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+        document.querySelector(".cronogramat a").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("cronograma").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+        document.querySelector(".Saibat a").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("Saiba").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+        document.querySelector(".contatot a").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("footer").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+        document.querySelector("#topo a").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+        
     </script>
+
 </body>
 
 </html>

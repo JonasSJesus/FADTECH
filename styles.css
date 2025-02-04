@@ -15,12 +15,10 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
-    line-height: 1.5;
-    background-color: var(--color-gray-100);
-    color: var(--color-gray-800);
+    background-image: url('Imagens/Fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 /* Header */
 header {
     background-color: var(--color-primary);
@@ -58,16 +56,34 @@ nav button:hover {
 
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
 .login-container select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
-}
-
-main {
-    padding: 20px;
 }
 
 .modal {
@@ -169,8 +185,6 @@ main {
 
 section {
     padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /* Hero Section */
@@ -181,14 +195,15 @@ section {
     padding: 8rem 2rem;
     width: 100%;
     margin-top: 0px;
-    size: 100%;
-    height: 250px;
-
+    size: 100vw;
+    height: 400px;
+    justify-content: center;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
+    margin-top: 100px;
 }
 
 .hero p {
@@ -198,11 +213,21 @@ section {
 }
 
 /* Grid Layouts */
+
+.program-info {
+
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 0px;
 }
 
 .card {
@@ -243,11 +268,21 @@ max-width:50%;
 }
 
 /* Projects Grid */
+
+.student-projects {
+
+        padding-bottom: 10px;
+        padding-top: 40px;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 .project-card {
@@ -268,11 +303,35 @@ max-width:50%;
     margin: 0;
 }
 
+.Saiba { 
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Sucesso {
+    text-align: center;
+}
+
+.Cronograma {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.linguagem {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
 /* Timeline */
 .timeline {
-    margin-top: 2rem;
+    
     border-left: 2px solid var(--color-primary);
     padding-left: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
 }
 
 .timeline-item {
@@ -357,6 +416,44 @@ form button {
 form button:hover {
     background-color: var(--color-primary-dark);
 }
+
+.footer {
+    background-color: #362e2e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .footer-section h3 {
+    color: white;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
 
 /* Responsive Design */
 @media (max-width: 768px) {
