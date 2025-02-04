@@ -1,38 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FADTECH</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fórum Moderno</title>
+    <link rel="stylesheet" href="forum.css">
 </head>
 <body>
-    <main class="forum">
-        <div class="container">
-            <h1>Student Forum</h1>
+    <header>
+        <h1>Fórum de Discussões</h1>
+        <button><a href="index.html">Inicio</a></button>
+        <button id="newTopicBtn">Nova Discussão</button>
+    </header>
 
-            <!-- Ask Question Form -->
-            <div class="card">
-                <h2>Ask a Question</h2>
-                <form id="questionForm" method="post" action="index.php?page=forum">
-                    <div class="form-group">
-                        <label for="questionTitle">Title</label>
-                        <input class = "pergunta" type="text" id="questionTitle" name="title" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="questionContent">Question</label>
-                        <textarea id="questionContent" name="content" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Post Question</button>
-                </form>
-            </div>
+    <main>
+        <div id="topicForm" class="hidden">
+            <h2>Criar Nova Discussão</h2>
+            <form id="newTopicForm">
+                <input type="text" id="topicTitle" placeholder="Título da discussão" required>
+                <textarea id="topicContent" placeholder="Conteúdo da discussão" required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+        </div>
 
-            <!-- Questions List -->
-            <div id="questionsList" class="questions-list">
-                <!-- Questions will be loaded here -->
-            </div>
+        <div id="topicsList">
+            <!-- Topics will be added here dynamically -->
         </div>
     </main>
-</body>
 
+    <script src="main.js"></script>
+</body>
 </html>
+
