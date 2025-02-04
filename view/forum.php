@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórum Moderno</title>
-    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet" href="./css/forum.css">
 </head>
 <body>
     <header>
         <h1>Fórum de Discussões</h1>
-        <button><a href="index.html">Inicio</a></button>
+        <button><a href="/">Inicio</a></button>
         <button id="newTopicBtn">Nova Discussão</button>
     </header>
 
@@ -28,7 +28,7 @@
         </div>
     </main>
 
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
 

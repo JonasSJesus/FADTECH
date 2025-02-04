@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard do Curso</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo"><a href = index.html>FADTECH</a></div>
             <ul class="dashboard">
-                <li><a href="forum.html">Fórum</a></li>
+                <li><a href="/forum">Fórum</a></li>
                 <li><a href="#contatos">Contatos</a></li>
                 <li><a href="#calendario">Calendário</a></li>
                 <li><a href="#perfil">Meu Perfil</a></li>

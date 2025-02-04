@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
     <title>FADTECH</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
@@ -49,7 +49,7 @@
                         </select>
                     </div>
                     <button type="submit">Login</button>
-                    <h3><a href="dashboard.html">Dashboard</a></h3>
+                    <h3><a href="/dashboard">Dashboard</a></h3>
                 </form>
             </div>
         </div>
