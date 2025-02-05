@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><a href = index.html>FADTECH</a></div>
+            <div class="logo"><a href='/'>FADTECH</a></div>
             <ul class="dashboard">
                 <li><a href="/forum">Fórum</a></li>
                 <li><a href="#contatos">Contatos</a></li>

@@ -15,7 +15,7 @@
 }
 
 body {
-    background-image: url('Imagens/Fundo.png');
+    background-image: url('../img/Fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
